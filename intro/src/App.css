@@ -5,13 +5,22 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear; /*код из медиа запроса*/
 }
 
+/*
+из-за настроек ОС и предпочтений пользователей использование
+@media приведет к тому, что анимация может не работать
+поэтому код из @media лучше оставить вне медиа-запроса
+*/
+
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} 
+*/
 
 .App-header {
   background-color: #282c34;
