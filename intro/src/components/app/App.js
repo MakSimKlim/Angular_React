@@ -6,6 +6,7 @@ import Nav from '../nav/Nav';
 import Power from '../power/Power';
 import Article from '../article/Article';
 import Footer from '../footer/Footer';
+import data from '../article/db.json';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
 
   }
 
+  let db = data;
+
   return (
     <div className="App">
       
@@ -33,7 +36,7 @@ function App() {
 
       <Power a={2} n={8}/>
 
-      <Article />
+      <Article db={db}/>
 
       <Footer />
       
