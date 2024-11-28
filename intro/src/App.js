@@ -1,7 +1,9 @@
 //import logo from './logo.svg';
 import './App.css';
-import Article from './Article/Article';
-import Header from './Header/Header';
+
+import Header from './header/Header';
+import Article from './article/Article';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Header />
 
       <Article />
+
+      <Footer />
       
     </div>
   );
