@@ -4,6 +4,8 @@ import './App.css';
 import Header from '../header/Header';
 import Nav from '../nav/Nav';
 import Power from '../power/Power';
+import Factorial from '../factorial/Factorial';
+import Fibanachi from '../fibanachi/Fibanachi';
 import Article from '../article/Article';
 import Footer from '../footer/Footer';
 import data from '../article/db.json';
@@ -35,6 +37,10 @@ function App() {
       <Nav navigation={nav}/>
 
       <Power a={2} n={8}/>
+
+      <Factorial n={5}/>
+
+      <Fibanachi n={5}/>
 
       <Article db={db}/>
 
