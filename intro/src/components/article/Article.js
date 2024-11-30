@@ -36,7 +36,7 @@ function Article(props)
                 let icon = props.db["people"][item].pol === "male" ? male : female; // тернарный оператор
                 console.log(item);
                 return(
-                  <div className="card">
+                  <div className="card" key={item}>
                     <img src={props.db["people"][item].photo} alt=""/>
                     <div className="name">
                         {props.db["people"][item].name + ' ' + props.db["people"][item].surname}
